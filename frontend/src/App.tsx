@@ -12,6 +12,7 @@ Amplify.configure(awsconfig);
 
 function App() {
   return (
+    <main className="d-flex justify-content-center">
     <Authenticator>
     {({signOut , user }) => (
         <main>
@@ -20,6 +21,7 @@ function App() {
         </main>
       )}
     </Authenticator>
+    </main>
   );
 }
 
